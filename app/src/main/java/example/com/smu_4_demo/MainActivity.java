@@ -13,5 +13,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.input_main);
         Log.d(TAG, "HI~");
+        Log.d(TAG, "test2");
 }
 }
