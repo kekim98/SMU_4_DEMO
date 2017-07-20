@@ -12,6 +12,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.input_main);
-        Log.d(TAG, "hi");
+        Log.d(TAG, "안녕하세용 ~~");
 }
 }
