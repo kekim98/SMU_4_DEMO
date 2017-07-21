@@ -22,9 +22,19 @@
     <ListView
         android:id="@+id/nameList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/imageView3"
         android:layout_alignLeft="@+id/imageView3"
-        android:layout_alignStart="@+id/imageView3"
-        android:layout_below="@+id/imageView3" />
+        android:layout_alignStart="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/actionModeBackground"
+        android:text="Button"
+        android:layout_below="@+id/nameList"
+        android:layout_alignLeft="@+id/nameList"
+        android:layout_alignStart="@+id/nameList" />
 </RelativeLayout>
 

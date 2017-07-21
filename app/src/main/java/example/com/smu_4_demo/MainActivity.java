@@ -50,15 +50,6 @@ public class MainActivity extends AppCompatActivity{
                 startActivity(intent);
             }
         });
-
-        Button btok = (Button) findViewById(R.id.btok);
-        btok.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent2 = new Intent(MainActivity.this, DetailViewActivity.class);
-                startActivity(intent2);
-            }
-        });
     }
 
     @Override

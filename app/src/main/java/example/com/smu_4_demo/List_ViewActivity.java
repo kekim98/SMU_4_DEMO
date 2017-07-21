@@ -5,12 +5,10 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.Map;
@@ -37,36 +35,17 @@ public class List_ViewActivity extends AppCompatActivity {
                 intent.putExtra("name", name);
                 intent.putExtra("code", code);
                 startActivity(intent);
-
-                /*Button exitbutton = (Button) findViewById(R.id.exitbutton);
-                exitbutton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                        builder.setMessage("정말로 종료하시겠습니까?");
-                        builder.setTitle("종료 알림창")
-                                .setCancelable(true)
-                                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialogInterface, int i) {
-                                        Intent intent = new Intent(MainActivity.this, AddViewActivity.class);
-                                        startActivity(intent);
-                                    }
-                                })
-                                .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialogInterface, int i) {
-                                        Intent intent = new Intent(MainActivity.this, AddViewActivity.class);
-                                        startActivity(intent);
-
-                                    }
-                                });
-                        builder.show();
-                    }
-                });*/
             }
         });
 
+        Button backbutton = (Button) findViewById(R.id.backbutton);
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(List_ViewActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
