@@ -2,14 +2,17 @@ package example.com.smu_4_demo;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.constraint.ConstraintLayout;
 
 /**
  * Created by gold24park on 2016. 8. 17..
  */
 public class IntroActivity extends Activity {
     private Handler handler;
+    private ConstraintLayout mLayout;
 
     Runnable runnable = new Runnable() {
         @Override
@@ -26,6 +29,8 @@ public class IntroActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
 
+        mLayout = (ConstraintLayout) findViewById(R.id.mLayout);
+        mLayout.setBackgroundColor(Color.rgb(255,255,204));
         init();
 
         handler.postDelayed(runnable, 2000);
