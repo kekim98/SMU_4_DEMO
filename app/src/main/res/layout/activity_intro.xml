@@ -7,29 +7,18 @@
     android:layout_height="match_parent"
     tools:context="example.com.smu_4_demo.IntroActivity">
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="청주야~ 내 청주야~!"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@android:color/background_dark"
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="684dp"
+        android:layout_height="731dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/img06"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.34" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="청주야 아프지마~!!"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@android:color/background_dark"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/img06"
+        app:layout_constraintVertical_bias="0.64" />
 
 </android.support.constraint.ConstraintLayout>

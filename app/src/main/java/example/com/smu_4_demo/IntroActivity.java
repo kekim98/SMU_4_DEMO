@@ -30,10 +30,10 @@ public class IntroActivity extends Activity {
         setContentView(R.layout.activity_intro);
 
         mLayout = (ConstraintLayout) findViewById(R.id.mLayout);
-        mLayout.setBackgroundColor(Color.rgb(255,255,204));
+        mLayout.setBackgroundColor(Color.rgb(255,255,255));
         init();
 
-        handler.postDelayed(runnable, 2000);
+        handler.postDelayed(runnable, 4000);
     }
 
     public void init() {

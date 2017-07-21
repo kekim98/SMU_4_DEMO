@@ -29,7 +29,7 @@ public class DetailViewActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DetailViewActivity.this, MainActivity.class);
+                Intent intent = new Intent(DetailViewActivity.this, List_ViewActivity.class);
                 startActivity(intent);
             }
         });

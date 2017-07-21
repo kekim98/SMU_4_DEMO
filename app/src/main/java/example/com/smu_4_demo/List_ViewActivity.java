@@ -51,12 +51,12 @@ public class List_ViewActivity extends AppCompatActivity {
     @Override
     protected void onResume(){
         super.onResume();
-        Log.d("MainActivity", "onResumeeeeeeeeeee");
+        Log.d("MainActivity", "onResume");
         refresh();
     }
 
     private void refresh() {
-        Log.d("MainActivity", "refreshhhhhhhhh");
+        Log.d("MainActivity", "refresh");
         SharedPreferences pref = AddViewActivity.getPref(this);
 
         mListAdapter.clear();
