@@ -20,6 +20,7 @@
         <activity android:name=".DetailView" />
         <activity android:name=".DetailViewActivity" />
         <activity android:name=".ListViewActivity" />
+        <activity android:name=".List_ViewActivity"></activity>
     </application>
 
 </manifest>
