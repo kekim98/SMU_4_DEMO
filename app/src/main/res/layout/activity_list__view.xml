@@ -20,10 +20,10 @@
         android:id="@+id/nameList"
         android:layout_width="match_parent"
         android:layout_height="157dp"
-        android:layout_weight="0.81" />
+        android:layout_weight="0.92" />
 
     <Button
-        android:id="@+id/backbutton "
+        android:id="@+id/backbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/actionModeBackground"

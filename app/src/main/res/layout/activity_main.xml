@@ -11,19 +11,28 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:weightSum="1">
 
-    <ImageView
-        android:id="@+id/imageView4"
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/img04"
-        android:layout_weight="0.14" />
+        android:text="학번과 이름을 저장하는 프로그램"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SMU_4_DEMO"
+        android:textSize="24sp" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.85"
-        app:srcCompat="@drawable/img05" />
+        app:srcCompat="@drawable/img05"
+        android:layout_weight="0.23" />
 
     <Button
         android:id="@+id/btif"
