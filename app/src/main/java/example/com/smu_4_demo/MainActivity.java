@@ -11,8 +11,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.input_main);
+        setContentView(R.layout.activity_main);
         Log.d(TAG, "HI~");
-        Log.d(TAG, "test2");
+        Log.d(TAG, "tesqwe");
 }
 }
