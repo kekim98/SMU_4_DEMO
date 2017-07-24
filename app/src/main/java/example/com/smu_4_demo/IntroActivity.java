@@ -33,7 +33,7 @@ public class IntroActivity extends Activity {
         mLayout.setBackgroundColor(Color.rgb(255,255,255));
         init();
 
-        handler.postDelayed(runnable, 4000);
+        handler.postDelayed(runnable, 2000);
     }
 
     public void init() {

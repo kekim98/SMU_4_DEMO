@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -16,7 +17,7 @@ import java.util.Map;
 public class List_ViewActivity extends AppCompatActivity {
 
     private ArrayAdapter<String> mListAdapter;
-
+    String[] items = {"시계", "계산기", "화씨 변환", "BMI계산"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +47,8 @@ public class List_ViewActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
+
+     }
 
     @Override
     protected void onResume(){

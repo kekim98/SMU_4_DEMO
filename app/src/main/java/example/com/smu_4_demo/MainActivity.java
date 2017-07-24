@@ -50,6 +50,16 @@ public class MainActivity extends AppCompatActivity{
                 startActivity(intent);
             }
         });
+
+        Button btcalc = (Button) findViewById(R.id.btcalc);
+        btcalc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, CalcActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override

@@ -13,7 +13,7 @@
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="match_parent"
-        android:layout_height="288dp"
+        android:layout_height="195dp"
         app:srcCompat="@drawable/img01" />
 
     <ListView
@@ -28,6 +28,7 @@
         android:layout_height="wrap_content"
         android:background="?attr/actionModeBackground"
         android:text="뒤로가기" />
+
 
 </LinearLayout>
 
