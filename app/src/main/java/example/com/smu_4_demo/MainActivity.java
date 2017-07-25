@@ -60,6 +60,15 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
+        Button btbmi = (Button) findViewById(R.id.btbmi);
+        btbmi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, BmiCalcActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override

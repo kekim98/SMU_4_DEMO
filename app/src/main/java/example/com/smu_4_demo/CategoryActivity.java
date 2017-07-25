@@ -2,6 +2,7 @@ package example.com.smu_4_demo;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -20,7 +21,7 @@ public class CategoryActivity extends AppCompatActivity {
 
         categoryview = (ListView) findViewById(R.id.categoryview);
 
-        String myStringArray[] = {"1.학번과 이름 저장", "2.학번과 이름 저장", "3.학번과 이름 저장", "4.학번과 이름 저장", "5.학번과 이름 저장"};
+        String myStringArray[] = {"1. 회원정보 저장", "2. 공지사항", "3. 웨이트장 사용시 유의사항", "4. 이용안내"};
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, myStringArray);
         categoryview.setAdapter(adapter);
@@ -29,10 +30,26 @@ public class CategoryActivity extends AppCompatActivity {
                 new AdapterView.OnItemClickListener(){
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                        String item = String.valueOf(parent.getItemAtPosition(position));
-                        Toast.makeText(CategoryActivity.this, item, Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(CategoryActivity.this, AddViewActivity.class);
-                        startActivity(intent);
+
+                        if(position == 0){
+                            Intent intent = new Intent(CategoryActivity.this, AddViewActivity.class);
+                            startActivity(intent);
+                        }
+
+                        if(position == 1){
+                            Intent intent = new Intent(CategoryActivity.this, NoticeActivity.class);
+                            startActivity(intent);
+                        }
+
+                        if(position == 2){
+                            Intent intent = new Intent(CategoryActivity.this, NoteActivity.class);
+                            startActivity(intent);
+                        }
+
+                        if(position == 3){
+                            Intent intent = new Intent(CategoryActivity.this, UseActivity.class);
+                            startActivity(intent);
+                        }
                     }
                 }
         );

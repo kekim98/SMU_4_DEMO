@@ -28,9 +28,10 @@
         android:textSize="24sp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btbmi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="?attr/actionModeBackground"
         android:text="BMI계산기" />
 
     <Button
@@ -44,12 +45,14 @@
         android:id="@+id/btcalc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="?attr/actionModeBackground"
         android:text="계산기" />
 
     <Button
         android:id="@+id/exit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="?attr/actionModeBackground"
         android:text="나가기" />
 
 </LinearLayout>

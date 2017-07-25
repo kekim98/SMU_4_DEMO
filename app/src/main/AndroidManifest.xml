@@ -22,7 +22,10 @@
         <activity android:name=".List_ViewActivity" />
         <activity android:name=".CalcActivity" />
         <activity android:name=".BmiCalcActivity" />
-        <activity android:name=".CategoryActivity"></activity>
+        <activity android:name=".CategoryActivity" />
+        <activity android:name=".NoticeActivity" />
+        <activity android:name=".NoteActivity" />
+        <activity android:name=".UseActivity"></activity>
     </application>
 
 </manifest>
