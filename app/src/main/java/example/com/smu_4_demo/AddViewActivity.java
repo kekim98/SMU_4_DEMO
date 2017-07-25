@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 import java.util.regex.Pattern;
 
+
 public class AddViewActivity extends AppCompatActivity {
 
     private NotificationManager mNM;
@@ -38,8 +39,9 @@ public class AddViewActivity extends AppCompatActivity {
         final EditText nameInput = (EditText) findViewById(R.id.name);
         final EditText codeInput = (EditText) findViewById(R.id.code);
         nameInput.setFilters(new InputFilter[]{filterKorAlpha});
-        Button saveButton = (Button) findViewById(R.id.savebutton);
+        final Button saveButton = (Button) findViewById(R.id.savebutton);
 
+        saveButton.setEnabled(false);
 
         mNM = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
@@ -72,7 +74,10 @@ public class AddViewActivity extends AppCompatActivity {
         conformbt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String name1 = nameInput.getText().toString();
+                String code1 = codeInput.getText().toString();
                 String code = null;
+
                 try {
                     code = codeInput.getText().toString().trim();
 
@@ -81,8 +86,12 @@ public class AddViewActivity extends AppCompatActivity {
                 } catch (NumberFormatException e) {
                     Toast.makeText(getApplicationContext(), "학번에는 숫자만을 입력하세요.", Toast.LENGTH_SHORT).show();
                 }
+                if(code1 != null && name1 != null){
+                    saveButton.setEnabled(true);
+                }
             }
         });
+
 
         saveButton.setOnClickListener(new View.OnClickListener() {
 
@@ -99,6 +108,8 @@ public class AddViewActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+
     }
 
     public static SharedPreferences getPref(Context context) {

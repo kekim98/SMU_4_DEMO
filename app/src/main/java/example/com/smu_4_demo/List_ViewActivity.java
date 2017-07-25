@@ -1,28 +1,36 @@
 package example.com.smu_4_demo;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ListView;
 
+import java.util.ArrayList;
 import java.util.Map;
+
+import static example.com.smu_4_demo.R.id.name;
+import static example.com.smu_4_demo.R.id.nameList;
 
 public class List_ViewActivity extends AppCompatActivity {
 
     private ArrayAdapter<String> mListAdapter;
-    String[] items = {"시계", "계산기", "화씨 변환", "BMI계산"};
+    private ArrayList<String> items = null;
+    private static final String DEMO_PREFERENCE = "DEMO_PREFERENCE";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list__view);
-        ListView nameList = (ListView) findViewById(R.id.nameList);
+
+        final ListView nameList = (ListView) findViewById(R.id.nameList);
         mListAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1);
         nameList.setAdapter(mListAdapter);
         nameList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -48,25 +56,64 @@ public class List_ViewActivity extends AppCompatActivity {
             }
         });
 
-     }
+        nameList.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-    @Override
-    protected void onResume(){
-        super.onResume();
-        Log.d("MainActivity", "onResume");
-        refresh();
-    }
+                    final String name = (String) adapterView.getAdapter().getItem(i);
+                    AlertDialog.Builder alertDlg = new AlertDialog.Builder(view.getContext());
+                    alertDlg.setTitle("삭제 알림창");
+                    alertDlg.setMessage("정말로 삭제하시겠습니까?");
 
-    private void refresh() {
-        Log.d("MainActivity", "refresh");
-        SharedPreferences pref = AddViewActivity.getPref(this);
+                    alertDlg.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            SharedPreferences pref = getSharedPreferences(DEMO_PREFERENCE, MODE_PRIVATE);
+                            SharedPreferences.Editor editor = pref.edit();
 
-        mListAdapter.clear();
-        Map<String, ?> values = pref.getAll();
-        for (String key:values.keySet()){
-            Log.d("aaa", "" + key);
-            mListAdapter.add(key);
+                            editor.remove(name);
+                            editor.commit();
+                            mListAdapter.notifyDataSetChanged();
+                            dialog.dismiss();
+                        }
+                    });
+
+                    alertDlg.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                        }
+                    });
+
+                    alertDlg.show();
+                    return false;
+                }
+            });
         }
-        mListAdapter.notifyDataSetChanged();
+
+
+
+
+
+        @Override
+        protected void onResume() {
+            super.onResume();
+            Log.d("MainActivity", "onResume");
+            refresh();
         }
-    }
+
+        private void refresh() {
+            Log.d("MainActivity", "refresh");
+            SharedPreferences pref = AddViewActivity.getPref(this);
+
+            mListAdapter.clear();
+            Map<String, ?> values = pref.getAll();
+            for (String key : values.keySet()) {
+                Log.d("aaa", "" + key);
+                mListAdapter.add(key);
+            }
+            mListAdapter.notifyDataSetChanged();
+        }
+        }
+
+

@@ -34,7 +34,7 @@
 
     <Button
         android:id="@+id/btsub"
-        android:layout_width="80dp"
+        android:layout_width="88dp"
         android:layout_height="50dp"
         android:background="?attr/actionModeBackground"
         android:text="-"
@@ -48,7 +48,7 @@
 
     <Button
         android:id="@+id/btdiv"
-        android:layout_width="80dp"
+        android:layout_width="88dp"
         android:layout_height="50dp"
         android:background="?attr/actionModeBackground"
         android:text="/"
@@ -62,7 +62,7 @@
 
     <Button
         android:id="@+id/btmul"
-        android:layout_width="80dp"
+        android:layout_width="88dp"
         android:layout_height="50dp"
         android:background="?attr/actionModeBackground"
         android:text="*"
@@ -76,7 +76,7 @@
 
     <Button
         android:id="@+id/btsum"
-        android:layout_width="80dp"
+        android:layout_width="88dp"
         android:layout_height="50dp"
         android:background="?attr/actionModeBackground"
         android:text="+"
@@ -90,7 +90,7 @@
 
     <TextView
         android:id="@+id/res"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -102,7 +102,7 @@
 
     <Button
         android:id="@+id/btback"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -10,17 +10,24 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:weightSum="1">
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="match_parent"
-        android:layout_height="195dp"
-        app:srcCompat="@drawable/img01" />
-
     <ListView
         android:id="@+id/nameList"
         android:layout_width="match_parent"
         android:layout_height="157dp"
-        android:layout_weight="0.92" />
+        android:layout_weight="0.75" />
+
+    <Button
+        android:id="@+id/modifybutton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="수정" />
+
+    <Button
+        android:id="@+id/deletebutton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="0.04"
+        android:text="삭제" />
 
     <Button
         android:id="@+id/backbutton"

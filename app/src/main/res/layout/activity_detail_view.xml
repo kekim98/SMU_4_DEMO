@@ -67,18 +67,6 @@
         app:layout_constraintVertical_bias="0.084"
         tools:ignore="HardcodedText" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="286dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.751"
-        app:srcCompat="@drawable/img02" />
-
     <Button
         android:id="@+id/backbutton"
         android:layout_width="0dp"

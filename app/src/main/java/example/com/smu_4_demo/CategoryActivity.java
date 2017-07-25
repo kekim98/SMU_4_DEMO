@@ -9,8 +9,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import static example.com.smu_4_demo.R.id.imageView;
-
 public class CategoryActivity extends AppCompatActivity {
 
     ListView categoryview;
