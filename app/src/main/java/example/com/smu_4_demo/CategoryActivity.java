@@ -22,7 +22,7 @@ public class CategoryActivity extends AppCompatActivity {
 
         String myStringArray[] = {"1.학번과 이름 저장", "2.학번과 이름 저장", "3.학번과 이름 저장", "4.학번과 이름 저장", "5.학번과 이름 저장"};
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, myStringArray);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, myStringArray);
         categoryview.setAdapter(adapter);
 
         categoryview.setOnItemClickListener(
