@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity{
         Intent intent;
         switch (item.getItemId()) {
             case R.id.menu:
-                intent = new Intent(this, AddViewActivity.class);
+                intent = new Intent(this, CategoryActivity.class);
                 startActivity(intent);
                 return true;
             default:
