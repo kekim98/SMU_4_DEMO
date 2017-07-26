@@ -6,18 +6,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class UseActivity extends AppCompatActivity {
+public class MapActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_use);
+        setContentView(R.layout.activity_map);
 
-        Button back = (Button) findViewById(R.id.btmain);
+        Button back = (Button) findViewById(R.id.button);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(UseActivity.this, MainActivity.class);
+                Intent intent = new Intent(MapActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });

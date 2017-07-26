@@ -51,21 +51,12 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
-        Button btcalc = (Button) findViewById(R.id.btcalc);
-        btcalc.setOnClickListener(new View.OnClickListener() {
+        Button bbtbmi = (Button) findViewById(R.id.btbmi);
+        bbtbmi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, CalcActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        Button btbmi = (Button) findViewById(R.id.btbmi);
-        btbmi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, BmiCalcActivity.class);
-                startActivity(intent);
+                Intent intent2 = new Intent(MainActivity.this, BmiCalcActivity.class);
+                startActivity(intent2);
             }
         });
 

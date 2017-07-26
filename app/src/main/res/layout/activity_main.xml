@@ -1,59 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_alignParentTop="true"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:weightSum="1">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="학번과 이름을 저장하는 프로그램"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@android:color/background_dark"
-        android:textSize="24sp" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="SMU_4_DEMO"
-        android:textSize="24sp" />
-
-    <Button
-        android:id="@+id/btbmi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/actionModeBackground"
-        android:text="BMI계산기" />
-
-    <Button
-        android:id="@+id/btif"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/actionModeBackground"
-        android:text="정보 확인" />
-
-    <Button
-        android:id="@+id/btcalc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/actionModeBackground"
-        android:text="계산기" />
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <Button
         android:id="@+id/exit"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="?attr/actionModeBackground"
-        android:text="나가기" />
+        android:text="나가기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.997" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/btbmi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/actionModeBackground"
+        android:text="bmi계산기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.894" />
+
+    <Button
+        android:id="@+id/btif"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/actionModeBackground"
+        android:text="정보 확인"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="383dp"
+        android:layout_height="364dp"
+        app:srcCompat="@drawable/background_04"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="3dp" />
+
+</android.support.constraint.ConstraintLayout>
 

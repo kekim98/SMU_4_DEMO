@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -21,7 +22,7 @@ public class CategoryActivity extends AppCompatActivity {
 
         categoryview = (ListView) findViewById(R.id.categoryview);
 
-        String myStringArray[] = {"1. 회원정보 저장", "2. 공지사항", "3. 웨이트장 사용시 유의사항", "4. 이용안내"};
+        String myStringArray[] = {"1. 회원정보 저장", "2. 공지사항", "3. 웨이트장 사용시 유의사항", "4. 이용안내", "5. 위치안내"};
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, myStringArray);
         categoryview.setAdapter(adapter);
@@ -54,5 +55,13 @@ public class CategoryActivity extends AppCompatActivity {
                 }
         );
 
+        Button btback = (Button) findViewById(R.id.btback);
+        btback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CategoryActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
