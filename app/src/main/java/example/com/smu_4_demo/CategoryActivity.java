@@ -51,6 +51,11 @@ public class CategoryActivity extends AppCompatActivity {
                             Intent intent = new Intent(CategoryActivity.this, UseActivity.class);
                             startActivity(intent);
                         }
+
+                        if(position == 4){
+                            Intent intent = new Intent(CategoryActivity.this, MapActivity.class);
+                            startActivity(intent);
+                        }
                     }
                 }
         );

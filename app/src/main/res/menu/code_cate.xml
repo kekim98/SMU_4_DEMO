@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/a"
+        android:title="-선택해주세요-" />
+    <item
+        android:id="@+id/b"
+        android:title="상체" />
+    <item
+        android:id="@+id/c"
+        android:title="하체" />
+    <item
+        android:id="@+id/d"
+        android:title="복부" />
+    <item
+        android:id="@+id/e"
+        android:title="전신" />
+</menu>

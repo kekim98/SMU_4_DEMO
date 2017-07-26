@@ -19,6 +19,7 @@ public class UseActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(UseActivity.this, MainActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

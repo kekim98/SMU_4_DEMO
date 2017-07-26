@@ -9,8 +9,11 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.NotificationCompat;
+import android.support.v7.widget.PopupMenu;
 import android.text.InputFilter;
 import android.text.Spanned;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,6 +21,8 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import java.util.regex.Pattern;
+
+import static example.com.smu_4_demo.R.id.parent;
 
 
 public class AddViewActivity extends AppCompatActivity {
@@ -40,6 +45,7 @@ public class AddViewActivity extends AppCompatActivity {
         final EditText codeInput = (EditText) findViewById(R.id.code);
         nameInput.setFilters(new InputFilter[]{filterKorAlpha});
         final Button saveButton = (Button) findViewById(R.id.savebutton);
+        Button catebt = (Button) findViewById(R.id.catebutton);
 
         saveButton.setEnabled(false);
 
@@ -60,6 +66,7 @@ public class AddViewActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 nameInput.setText("");
+                Toast.makeText(getApplication(), "이름을 지웠습니다.", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -67,6 +74,7 @@ public class AddViewActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 codeInput.setText("");
+                Toast.makeText(getApplication(), "학번을 지웠습니다.", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -82,9 +90,9 @@ public class AddViewActivity extends AppCompatActivity {
                     code = codeInput.getText().toString().trim();
 
                     int rt = Integer.parseInt(code);
-                    Toast.makeText(getApplicationContext(), "RT : " + rt, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "학번 : " + rt, Toast.LENGTH_SHORT).show();
                 } catch (NumberFormatException e) {
-                    Toast.makeText(getApplicationContext(), "학번에는 숫자만을 입력하세요.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "학번에는 숫자만 입력하세요.", Toast.LENGTH_SHORT).show();
                 }
                 if(code1 != null && name1 != null){
                     saveButton.setEnabled(true);
@@ -108,9 +116,26 @@ public class AddViewActivity extends AppCompatActivity {
                 finish();
             }
         });
-
-
     }
+
+    public void showPopup(View v){
+        PopupMenu popup = new PopupMenu(this, v);
+        MenuInflater inflater = popup.getMenuInflater();
+        inflater.inflate(R.menu.code_cate, popup.getMenu());
+        popup.show();
+
+        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+
+                Button catebt = (Button) findViewById(R.id.catebutton);
+                catebt.setText(item.getTitle());
+                Toast.makeText(getApplication(), item.getTitle() + "을 선택하셨습니다.", Toast.LENGTH_SHORT).show();
+                return true;
+            }
+        });
+    }
+
 
     public static SharedPreferences getPref(Context context) {
         return context.getSharedPreferences(DEMO_PREFERENCE, MODE_PRIVATE);
@@ -125,5 +150,9 @@ public class AddViewActivity extends AppCompatActivity {
             return null;
         }
     };
+
+
+
+
 
 }

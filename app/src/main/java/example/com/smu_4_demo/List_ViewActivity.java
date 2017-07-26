@@ -98,18 +98,18 @@ public class List_ViewActivity extends AppCompatActivity {
         @Override
         protected void onResume() {
             super.onResume();
-            Log.d("MainActivity", "onResume");
+            //Log.d("MainActivity", "onResume");
             refresh();
         }
 
         private void refresh() {
-            Log.d("MainActivity", "refresh");
+            //Log.d("MainActivity", "refresh");
             SharedPreferences pref = AddViewActivity.getPref(this);
 
             mListAdapter.clear();
             Map<String, ?> values = pref.getAll();
             for (String key : values.keySet()) {
-                Log.d("aaa", "" + key);
+                //Log.d("aaa", "" + key);
                 mListAdapter.add(key);
             }
             mListAdapter.notifyDataSetChanged();

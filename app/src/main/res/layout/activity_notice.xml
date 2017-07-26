@@ -19,20 +19,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textMultiLine"
-        android:text="123456789123456789123456789123456789"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_goneMarginBottom="10dp"
-        app:layout_constraintVertical_bias="0.306" />
-
     <ImageView
         android:id="@+id/imageView11"
         android:layout_width="391dp"
@@ -46,5 +32,79 @@
         tools:layout_editor_absoluteY="274dp"
         tools:layout_editor_absoluteX="0dp"
         app:layout_constraintHorizontal_bias="0.3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="245dp"
+        android:layout_height="30dp"
+        android:text="종목:농구"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="245dp"
+        android:layout_height="30dp"
+        android:text="내용:농구 프로그램 및 키 크는 프로그램"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.467" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="245dp"
+        android:layout_height="30dp"
+        android:text="대상:초등학생~고등학생"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="245dp"
+        android:layout_height="30dp"
+        android:text="시작:2017년 7월25일~8월20일까지"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.378" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="245dp"
+        android:layout_height="30dp"
+        android:text="시간:오전11시.오후1시.2시.3시.4시.5시"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.216" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="245dp"
+        android:layout_height="30dp"
+        android:text="금액:주3회(월,수,금)13만원"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301" />
 
 </android.support.constraint.ConstraintLayout>

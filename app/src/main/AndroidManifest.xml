@@ -20,8 +20,6 @@
         <activity android:name=".AddViewActivity" />
         <activity android:name=".DetailViewActivity" />
         <activity android:name=".List_ViewActivity" />
-        <activity android:name=".CalcActivity" />
-        <activity android:name=".BmiCalcActivity" />
         <activity android:name=".CategoryActivity" />
         <activity android:name=".NoticeActivity" />
         <activity android:name=".NoteActivity" />

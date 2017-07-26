@@ -31,6 +31,7 @@ public class DetailViewActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(DetailViewActivity.this, List_ViewActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

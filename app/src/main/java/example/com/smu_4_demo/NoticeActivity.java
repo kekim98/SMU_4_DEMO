@@ -19,6 +19,7 @@ public class NoticeActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(NoticeActivity.this, MainActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

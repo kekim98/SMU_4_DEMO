@@ -6,18 +6,100 @@
     android:layout_height="match_parent"
     tools:context="example.com.smu_4_demo.NoteActivity">
 
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textMultiLine"
-        android:text="웨이트장 사용시 유의사항  1. 카운터로 학생증을 제시하기 바랍니다. 2. 운동전 이용안내 및 준수사항 숙지 및 준비운동을 하시기 바랍니다. 3. 복장은 트레이닝복 및 지정된 운동화를 착용하시기 바랍니다. 4. 사물함 사용후 소지품은 반드시 반출하시기 바랍니다.(장시간사용금지) 5. 탈의/샤워실을 2층 탈의실 및 샤워실을 이용하시기 바랍니다. 6. 음식물 반입을 금지합니다.  상명스포츠센터"
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="상명스포츠센터"
+        android:textColor="@android:color/background_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" />
+        app:layout_constraintVertical_bias="0.405" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="6. 음식물 반입을 금지합니다."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.353"
+        app:layout_constraintHorizontal_bias="0.301" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="5. 탈의/샤워실을 2층 탈의실 및 샤워실을 이용하시기 바랍니다. "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.302"
+        app:layout_constraintHorizontal_bias="0.48" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="4. 사물함 사용후 소지품은 반드시 반출하시기 바랍니다."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251"
+        app:layout_constraintHorizontal_bias="0.407" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="3. 복장은 트레이닝복 및 지정된 운동화를 착용하시기 바랍니다."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199"
+        app:layout_constraintHorizontal_bias="0.453" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="2. 운동전 이용안내 및 준수사항 숙지 및 준비운동을 하시기 바랍니다."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="1. 카운터로 학생증을 제시하기 바랍니다."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.096"
+        app:layout_constraintHorizontal_bias="0.339" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="웨이트장 사용시 유의사항  "
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032" />
 
     <ImageView
         android:id="@+id/imageView8"
