@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SMU_4-3_DEMO.iml" filepath="$PROJECT_DIR$/SMU_4-3_DEMO.iml" />
       <module fileurl="file://$PROJECT_DIR$/SMU_4.1_DEMO.iml" filepath="$PROJECT_DIR$/SMU_4.1_DEMO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SMU_4.2_DEMO.iml" filepath="$PROJECT_DIR$/SMU_4.2_DEMO.iml" />
       <module fileurl="file://$PROJECT_DIR$/SMU_4.3_DEMO.iml" filepath="$PROJECT_DIR$/SMU_4.3_DEMO.iml" />
       <module fileurl="file://$PROJECT_DIR$/SMU_4_DEMO.iml" filepath="$PROJECT_DIR$/SMU_4_DEMO.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />

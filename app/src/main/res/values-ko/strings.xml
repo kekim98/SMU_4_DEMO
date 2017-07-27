@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SMU_4_DEMO</string>
+    <string name="app_name">상명지방이</string>
+    <string name="backbtn">뒤로가기</string>
+    <string name="name">이름</string>
+    <string name="code">학번</string>
+    <string name="main">메인화면</string>
 </resources>

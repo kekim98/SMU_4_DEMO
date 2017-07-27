@@ -23,7 +23,7 @@ public class BmiActivity extends AppCompatActivity {
         a = Double.parseDouble(num1.getText().toString());
         b = Double.parseDouble(num2.getText().toString());
 
-        c = a + b;
+        c = b / a * a;
 
         Button btcalc = (Button) findViewById(R.id.btcalc);
         btcalc.setOnClickListener(new View.OnClickListener() {

@@ -24,7 +24,8 @@
         <activity android:name=".NoticeActivity" />
         <activity android:name=".NoteActivity" />
         <activity android:name=".UseActivity" />
-        <activity android:name=".MapActivity"></activity>
+        <activity android:name=".MapActivity" />
+        <activity android:name=".UrlActivity"></activity>
     </application>
 
 </manifest>

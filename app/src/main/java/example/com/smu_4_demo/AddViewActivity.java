@@ -85,16 +85,16 @@ public class AddViewActivity extends AppCompatActivity {
                 String name1 = nameInput.getText().toString();
                 String code1 = codeInput.getText().toString();
                 String code = null;
+                int num = code1.length();
 
-                try {
+                if(num < 9){
+                    Toast.makeText(getApplicationContext(), "학번이 9자리 미만입니다.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "다시 입력하여주세요.", Toast.LENGTH_SHORT).show();
+                    return;
+                }else {
                     code = codeInput.getText().toString().trim();
-
                     int rt = Integer.parseInt(code);
-                    Toast.makeText(getApplicationContext(), "학번 : " + rt, Toast.LENGTH_SHORT).show();
-                } catch (NumberFormatException e) {
-                    Toast.makeText(getApplicationContext(), "학번에는 숫자만 입력하세요.", Toast.LENGTH_SHORT).show();
-                }
-                if(code1 != null && name1 != null){
+                    Toast.makeText(getApplicationContext(), "이름 :" + name1 + "학번 : " + rt, Toast.LENGTH_SHORT).show();
                     saveButton.setEnabled(true);
                 }
             }

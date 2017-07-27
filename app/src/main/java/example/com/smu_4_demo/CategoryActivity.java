@@ -22,7 +22,7 @@ public class CategoryActivity extends AppCompatActivity {
 
         categoryview = (ListView) findViewById(R.id.categoryview);
 
-        String myStringArray[] = {"1. 회원정보 저장", "2. 공지사항", "3. 웨이트장 사용시 유의사항", "4. 이용안내", "5. 위치안내"};
+        String myStringArray[] = {"1. 회원정보 저장", "2. 공지사항", "3. 웨이트장 사용시 유의사항", "4. 이용안내", "5. 위치안내", "6. 학교 홈페이지"};
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, myStringArray);
         categoryview.setAdapter(adapter);
@@ -54,6 +54,11 @@ public class CategoryActivity extends AppCompatActivity {
 
                         if(position == 4){
                             Intent intent = new Intent(CategoryActivity.this, MapActivity.class);
+                            startActivity(intent);
+                        }
+
+                        if(position == 5){
+                            Intent intent = new Intent(CategoryActivity.this, UrlActivity.class);
                             startActivity(intent);
                         }
                     }
